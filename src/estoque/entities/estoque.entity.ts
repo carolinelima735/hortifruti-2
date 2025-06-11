@@ -7,7 +7,7 @@ export class Estoque {
   id: number;
 
   @OneToOne(() => Produto)
-  @JoinColumn({ name: 'produto_id' })
+  @JoinColumn()
   produto: Produto;
 
   @Column()
